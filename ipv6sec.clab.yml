@@ -1,0 +1,45 @@
+name: srlsw
+
+  
+topology:
+  nodes:
+    # Nokia SRL Linux funcionando como dispositivo de capa 2
+    srl1:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:23.10.1
+      type: ixrd3
+      startup-config: srl1/config.json
+      
+    # Nokia SRL Linux funcionando como router
+    srl2:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:23.10.1
+      type: ixrd3
+      startup-config: srl2/config.json
+           
+    PC1:
+      kind: linux
+      image: docker.io/esanchezv/kaliipv6v2.1:latest
+      exec:
+      - ip -6 route del default dev eth0
+
+    PC2:
+      kind: linux
+      image: docker.io/esanchezv/kaliipv6v2.1:latest
+      exec:
+      - ip -6 route del default dev eth0  
+
+    PC3:
+      kind: linux
+      image: praqma/network-multitool:extra
+      exec:
+      - ip -6 route del default dev eth0  
+
+    
+  links:
+    - endpoints: ["srl2:e1-1", "srl1:e1-1"]
+    - endpoints: ["PC1:eth1", "srl1:e1-2"]
+    - endpoints: ["PC3:eth1", "srl1:e1-3"]
+    - endpoints: ["PC2:eth1", "srl1:e1-4"]
+    
+     

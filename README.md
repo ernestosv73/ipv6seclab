@@ -14,7 +14,8 @@ Nokia SRL Linux Router General Config:
 
 Nokia SRL Linux Switch General Config:
 * A network instance type mac-vrf is created with the name "lanswitch". Interfaces eth1 to eth4 are configured as type bridged and associated with this net instance.
-
+* An IPv6 ACL filter is configured, named "ipv6ra". The action is specified as drop, with logging set to true. The filter matches packets with IPv6 header field "next-header:58", "icmp6 type:134", "code:0"
+* The configured ACL is attached to the eth2 and eth4 interfaces for incoming traffic. 
 ## Getting Started
 
 ### Dependencies

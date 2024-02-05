@@ -17,17 +17,21 @@ Nokia SRL Linux Switch General Config:
 * An IPv6 ACL filter is configured, named "ipv6ra". The action is specified as drop, with logging set to true. The filter matches packets with IPv6 header field "next-header:58", "icmp6 type:134", "code:0"
 * The configured ACL is attached to the eth2 and eth3 interfaces for incoming traffic.
 * The eth4 interface connecting to PC2 Kali Linux is unprotected. The purpose is to perform security assessments, by executing attacks for future ACL definitions.
+* For more configuration details, consult the config.json file
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+Prerequisites, libraries, OS version, etc., needed before running lab.
+* 64-bit kernel and CPU support for virtualization.
+* KVM virtualization support.
+* At least 4 GB of RAM.
+* Ubuntu Server 22.04 LTS with Docker engine. (https://docs.docker.com/desktop/install/linux-install/).
+* Containerlab. (https://containerlab.dev/install/).
+* For packet capture: Edgeshark. (https://github.com/siemens/edgeshark). 
+### Installing topology files
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Clone repository: 
 
 ### Executing program
 

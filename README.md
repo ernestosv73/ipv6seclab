@@ -47,8 +47,8 @@ Prerequisites, libraries, OS version, etc., needed before running lab.
 ## Test IPv6 Security with Thc-IPv6 Toolkit
 
 To check the IPv6 filter ACL, run these examples:
-Description: Announce yourself as a router and try to become the default router.
-* PC1#atk6-fake_router6 eth1 2001:db8:bbbb:1::/64
+* Description: Announce yourself as a router and try to become the default router.
+  * PC1#atk6-fake_router6 eth1 2001:db8:bbbb:1::/64
 
 
 ## Authors

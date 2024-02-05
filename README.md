@@ -5,7 +5,7 @@ To mitigate one of the security issues of IPv6 SLAAC, this scenario provides an 
 
 ## Description
 
-The lab consists of an Nokia SR Linux router node connected to an Nokia SR Linux node configured as a switch. Three host nodes are also connected to the switch:
+The lab consists of an Nokia SR Linux router node connected to another Nokia SR Linux node configured as a switch. Three host nodes are also connected to the switch:
 PC1 and PC2: Kali Linux OS. Image based on kali-rolling with packages net-tools, iproute2, ipv6toolkit and Thc-Ipv6.
 PC3: Alpine Linux with net tools.
 

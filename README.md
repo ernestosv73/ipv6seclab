@@ -40,14 +40,16 @@ Prerequisites, libraries, OS version, etc., needed before running lab.
 ### Managing nodes
 
 * To connect to a bash shell Kali Linux Docker (PC1 or PC2), run the command: docker exec -it clab-ipv6sec-PC1 /bin/bash
-* To connect to a bash shell Alpine Linux (PC3), run the command: docker exec -it clab-ipv6sec-PC1 /bin/bash 
+* To connect to a bash shell Alpine Linux (PC3), run the command: docker exec -it clab-ipv6sec-PC1 /bin/bash
+* You can access the CLI SRL Linux using a SSH connection running the command: ssh admin@clab-ipv6sec-SRL1. Default credentials: admin:NokiaSrl1!
+ 
 
-## Help
+## Test IPv6 Security with Thc-IPv6 Toolkit
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+To check the IPv6 filter ACL, run these examples:
+Description: Announce yourself as a router and try to become the default router.
+* PC1#atk6-fake_router6 eth1 2001:db8:bbbb:1::/64
+
 
 ## Authors
 

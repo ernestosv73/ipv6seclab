@@ -5,7 +5,15 @@ To mitigate one of the security issues of IPv6 SLAAC, this scenario provides an 
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+The lab consists of an Nokia SR Linux router node connected to an Nokia SR Linux node configured as a switch. Three host nodes are also connected to the switch:
+PC1 and PC2: Kali Linux OS. Image based on kali-rolling with packages net-tools, iproute2, ipv6toolkit and Thc-Ipv6.
+PC3: Alpine Linux with net tools.
+
+Nokia SRL Linux Router General Config:
+* Eth1/1.0 IPv6 static global unicast address (2001:db8:aaaa:1::1/64) with Router Advertisement, (advertised prefix: 2001:db8:aaaa:1::/64).
+
+Nokia SRL Linux Switch General Config:
+* A network instance type mac-vrf is created with the name "lanswitch". Interfaces eth1 to eth4 are configured as type bridged and associated with this net instance.
 
 ## Getting Started
 

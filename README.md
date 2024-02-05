@@ -31,11 +31,11 @@ Prerequisites, libraries, OS version, etc., needed before running lab.
 * For packet capture: Edgeshark. (https://github.com/siemens/edgeshark). 
 ### Installing topology files
 
-* Clone repository: 
+* Clone repository to a current working directory in ubuntu server: git clone https://github.com/ernestosv73/ipv6seclab.git
 
-### Executing program
+### Executing topology lab
 
-* How to run the program
+* From directory /ipv6seclab, run the command: clab deploy -t 
 * Step-by-step bullets
 ```
 code blocks for commands

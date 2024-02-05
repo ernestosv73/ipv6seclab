@@ -35,11 +35,12 @@ Prerequisites, libraries, OS version, etc., needed before running lab.
 
 ### Executing topology lab
 
-* From directory /ipv6seclab, run the command: clab deploy -t 
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* From directory /ipv6seclab, run the command: clab deploy -t ipv6sec.clab.yml
+
+### Managing nodes
+
+* To connect to a bash shell Kali Linux Docker (PC1 or PC2), run the command: docker exec -it clab-ipv6sec-PC1 /bin/bash
+* To connect to a bash shell Alpine Linux (PC3), run the command: docker exec -it clab-ipv6sec-PC1 /bin/bash 
 
 ## Help
 

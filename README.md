@@ -68,7 +68,7 @@ linkedin: https://www.linkedin.com/in/ernestos%C3%A1nchez
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the [MIT] License - see the LICENSE.txt file for details
 
 ## Acknowledgments
 

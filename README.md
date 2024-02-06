@@ -1,4 +1,4 @@
-# IPv6 Security Lab
+# IPv6 Security Lab based in Containerlab
 This test laboratory aims to provide a network topology based on Containerlab that allows you to understand the operation of the protocols involved in the IPv6 address autoconfiguration process.
 To mitigate one of the security issues of IPv6 SLAAC, this scenario provides an example of configuring Router Advertisement Guard based on an IPv6 filter ACL.
 

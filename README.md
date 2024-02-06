@@ -55,21 +55,16 @@ To check the IPv6 filter ACL, run these examples:
 * Description: Announce yourself as a router and try to become the default router. Option -E o (overlapping fragments for keep-last targets)
   * PC1#atk6-fake_router26 eth1 -E o -A 2001:db8:dddd:1::/64
 
+For more details, consult: https://www.kali.org/tools/thc-ipv6/
 
-## Authors
+## Author
 
-Contributors names and contact info
+MSc. Ernesto Sánchez. 
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+mail: esanchez@ucasal.edu.ar
 
-## Version History
+linkedin: linkedin.com/in/ernestosánchez
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
 
 ## License
 

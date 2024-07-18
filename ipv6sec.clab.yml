@@ -31,7 +31,7 @@ topology:
 
     PC3:
       kind: linux
-      image: praqma/network-multitool:extra
+      image: docker.io/wbitt/network-multitool:extra
       exec:
       - ip -6 route del default dev eth0  
 

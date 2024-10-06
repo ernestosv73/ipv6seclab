@@ -31,7 +31,7 @@ topology:
 
     PC3:
       kind: linux
-      image: esanchezv/suricata6:latest
+      image: elasticsearch:8.15.2
       exec:
       - ip -6 route del default dev eth0  
 

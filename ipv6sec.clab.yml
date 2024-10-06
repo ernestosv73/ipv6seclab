@@ -31,7 +31,7 @@ topology:
 
     PC3:
       kind: linux
-      image: esanchezv/suricata6:latest
+      image: esanchezv/ubuntu2204:latest
       exec:
       - ip -6 route del default dev eth0  
 

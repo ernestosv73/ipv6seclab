@@ -19,11 +19,10 @@ topology:
            
     PC1:
       kind: linux
-      image: kibana:7.17.24
+      image: docker.io/esanchezv/kaliipv6v2.1:latest
       exec:
       - ip -6 route del default dev eth0
-      ports:
-      - 5601:5601
+      
         
     PC2:
       kind: linux
@@ -31,20 +30,18 @@ topology:
       exec:
       - ip -6 route del default dev eth0  
 
-    elasticsearch:
+    Pc3:
       kind: linux
-      image: esanchezv/suricaelastic:latest
+      image: ghcr.io/hellt/network-multitool:latest
       exec:
       - ip -6 route del default dev eth0
-      - ip -6 addr add 2001:db8:aaaa:1::10/64 dev eth1
-      ports:
-      - 9200:9200
+      
 
     
   links:
     - endpoints: ["srl2:e1-1", "srl1:e1-1"]
     - endpoints: ["PC1:eth1", "srl1:e1-2"]
-    - endpoints: ["elasticsearch:eth1", "srl1:e1-3"]
+    - endpoints: ["PC3", "srl1:e1-3"]
     - endpoints: ["PC2:eth1", "srl1:e1-4"]
     
      

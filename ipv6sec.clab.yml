@@ -22,9 +22,9 @@ topology:
       image: kibana:7.17.24
       #exec:
       #- ip -6 route del default dev eth0
-      publish:
-        # tcp port 22 will be published and accessible to anyone
-        - http/5601 
+      ports:
+        - 5601:5601
+        
     PC2:
       kind: linux
       image: docker.io/esanchezv/kaliipv6v2.1:latest

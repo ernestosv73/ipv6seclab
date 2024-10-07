@@ -31,7 +31,7 @@ topology:
       exec:
       - ip -6 route del default dev eth0  
 
-    PC3:
+    elasticsearch:
       kind: linux
       image: esanchezv/suricaelastic:latest
       exec:
@@ -44,7 +44,7 @@ topology:
   links:
     - endpoints: ["srl2:e1-1", "srl1:e1-1"]
     - endpoints: ["PC1:eth1", "srl1:e1-2"]
-    - endpoints: ["PC3:eth1", "srl1:e1-3"]
+    - endpoints: ["elasticsearch:eth1", "srl1:e1-3"]
     - endpoints: ["PC2:eth1", "srl1:e1-4"]
     
      

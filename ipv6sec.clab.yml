@@ -30,7 +30,7 @@ topology:
       exec:
       - ip -6 route del default dev eth0  
 
-    Pc3:
+    PC3:
       kind: linux
       image: ghcr.io/hellt/network-multitool:latest
       exec:

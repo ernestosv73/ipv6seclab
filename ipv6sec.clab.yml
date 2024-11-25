@@ -32,7 +32,7 @@ topology:
 
     PC3:
       kind: linux
-      image: ghcr.io/hellt/network-multitool:latest
+      image: saidsef/scapy-containerised:latest
       exec:
       - ip -6 route del default dev eth0
       

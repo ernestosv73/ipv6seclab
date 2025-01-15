@@ -32,7 +32,7 @@ topology:
 
     PC3:
       kind: linux
-      image: saidsef/scapy-containerised:latest
+      image: docker.io/esanchezv/kaliipv6v2.1:latest
       exec:
       - ip -6 route del default dev eth0
       

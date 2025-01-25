@@ -7,14 +7,14 @@ topology:
     srl1:
       kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux:23.10.1
-      type: ixrd5
+      type: ixrd3
       startup-config: srlsw/config.json
       
     # Nokia SRL Linux funcionando como router
     srl2:
       kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux:23.10.1
-      type: ixrd5
+      type: ixrd3
       startup-config: srlrt/config.json
            
     PC1:

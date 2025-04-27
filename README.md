@@ -63,7 +63,7 @@ MSc. Ernesto Sánchez.
 
 mail: esanchez@ucasal.edu.ar
 
-linkedin: https://www.linkedin.com/in/ernestos%C3%A1nchez
+linkedin: https://www.linkedin.com/in/ernestosanchez73/
 
 
 ## License
